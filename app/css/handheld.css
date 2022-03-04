@@ -1,0 +1,23 @@
+/* CSS Document */
+/* this is meant for future enhancements - such as blocking images for a user who is viewing the page on a PDA or cell phone */
+.noprint{display:none;}
+.hidden{display:none;}
+body{width:240px;}
+#title{font-size:large;}
+#tools{font-size:large; margin-top:15px;background-color:#0099CC;}
+#servicesbox{font-size:large; margin-top:15px;background-color:#CC9900;}
+#collectionsbox{font-size:large; margin-top:15px;background-color:#FF6600;}
+#aboutbox{font-size:large; margin-top:15px;background-color:#99CCCC;}
+.imgbox, #swooshEnd, #swooshBegin{display:none;}
+.textbox{float:left;}
+#mastheadtext{display:block;list-style-type:disc;}
+#actiontitle {font-size:1.5em;font-family:Times, serif;color:#006;font-weight:bold; background-color:#FFFFCC;}
+#newstitle {font-size:1.5em; color:#006; margin-top:20px; font-weight:bold;background-color:#FFFFCC;}
+.stuff{float:left;}
+#stufftitle{margin-top:20px; padding:3px; font-size:large; background-color:#FFFFCC;clear:both;}
+.bigcontainer{margin-top:25px;}
+.footer{float:left;}
+.mainlinks{background-color:#fff;}
+
+/*use this class to create hanging indents such as for citations. */
+.hanging {text-indent:-20px; margin-left:20px;}

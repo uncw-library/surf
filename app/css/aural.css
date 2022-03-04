@@ -1,0 +1,5 @@
+/* see http://www.w3.org/TR/REC-CSS2/aural.html for specifications when you are ready to code */
+body {speech-rate:medium;
+voice-family:male;}
+
+p {pause:20ms;}

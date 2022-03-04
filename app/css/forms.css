@@ -1,0 +1,24 @@
+
+
+br{clear:both;}
+
+form{
+background-image:url(../images/wave.gif);
+background-repeat:no-repeat;
+border:1px solid #006666;
+margin-top:10px;
+padding-top:10px;
+padding-bottom:25px;
+width:350px;
+}
+
+label,input {display:block;	float: left;margin-bottom: 10px;}
+
+p span input{margin-right:45px;margin-top:5px;border:1px solid green;}
+
+p input{float:right;}
+
+label {text-align:right;width:85px;padding-right: 20px;}
+textarea {text-align: left;}
+	/* table-less forms layout graciously explained to the masses by www.quirksmode.org */
+

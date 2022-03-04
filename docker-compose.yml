@@ -1,8 +1,11 @@
 version: "3.7"
 services:
   surf:
+    image: libapps-admin.uncw.edu:8000/randall-dev/surf
     build: .
+    container_name: surf
+    platform: linux/x86_64/v8
     ports:
       - "8001:80"
     volumes:
-      - .:/var/www/html
+      - ./app:/var/www/html/surf
