@@ -4,7 +4,7 @@ It has lived at libary.uncw.edu/surf.  Since randallwebvm is begin decommissione
 
 You can run a dev box on your machine with `docker-compose up`, and push the changes to gitlab & rancher.
 
-dev site at http://localhost:8001/surf
+See the site at http://localhost:8001/surf
 
 ## Rancher production
 
