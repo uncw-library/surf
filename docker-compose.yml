@@ -1,11 +1,19 @@
 version: "3.7"
+
 services:
   surf:
     image: libapps-admin.uncw.edu:8000/randall-dev/surf
-    build: .
     container_name: surf
-    platform: linux/x86_64/v8
-    ports:
-      - "8001:80"
-    volumes:
-      - ./app:/var/www/html/surf
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.surf.entrypoints=websecure
+      - traefik.http.routers.surf.rule=Host(`library.uncw.edu`) && PathPrefix(`/surf`)
+      - traefik.http.routers.surf.tls=true
+      - traefik.http.routers.surf.priority=99
+      - traefik.http.services.surf.loadbalancer.server.port=80
+    restart: unless-stopped
+
+networks:
+  default:
+    name: traefik_net
+    external: true
