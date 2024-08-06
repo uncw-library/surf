@@ -9,6 +9,6 @@ See the site at http://localhost:8001/surf
 ## Rancher production
 
 ```
-docker build -t libapps-admin.uncw.edu:8000/randall-dev/surf --platform linux/x86_64/v8 .
-docker push libapps-admin.uncw.edu:8000/randall-dev/surf
+docker build -t uncwlibrary/surf --platform linux/x86_64/v8 .
+docker push uncwlibrary/surf
 ```
