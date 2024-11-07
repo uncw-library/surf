@@ -1,5 +1,3 @@
-version: "3.7"
-
 services:
   surf:
     image: uncwlibrary/surf
