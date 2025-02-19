@@ -1,6 +1,6 @@
 services:
   surf:
-    image: uncwlibrary/surf
+    image: uncwlibrary/surf:replacement_redirect
     container_name: surf
     labels:
       - traefik.enable=true
