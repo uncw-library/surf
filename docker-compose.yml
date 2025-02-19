@@ -5,7 +5,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.surf.entrypoints=websecure
-      - traefik.http.routers.surf.rule=Host(`library.uncw.edu`) && PathPrefix(`/surf`)
+      - traefik.http.routers.surf.rule=Host(`libapps-staff.uncw.edu`) && PathPrefix(`/surf`)
       - traefik.http.routers.surf.tls=true
       - traefik.http.routers.surf.priority=999
       - traefik.http.services.surf.loadbalancer.server.port=80
