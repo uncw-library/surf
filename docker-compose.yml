@@ -9,6 +9,7 @@ services:
       - traefik.http.routers.surf.tls=true
       - traefik.http.routers.surf.priority=999
       - traefik.http.services.surf.loadbalancer.server.port=80
+      - traefik.http.routers.surf.middlewares=botblocker@file,bot-wrangler@file,inflightreq@file,ratelimit@file
     restart: unless-stopped
 
 networks:
