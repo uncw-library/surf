@@ -9,7 +9,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.surf.entrypoints=websecure
-      - traefik.http.routers.surf.rule=Host(`localhost`) && PathPrefix(`/surf`)
+      - traefik.http.routers.surf.rule=Host(`devbox01.libdev.lan`) && PathPrefix(`/surf`)
       - traefik.http.routers.surf.tls=true
       - traefik.http.routers.surf.priority=999
       - traefik.http.services.surf.loadbalancer.server.port=80
