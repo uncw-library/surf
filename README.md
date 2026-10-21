@@ -9,6 +9,6 @@ See the site at http://localhost:8001/surf
 ## Rancher production
 
 ```
-docker build --platform linux/amd64 -t uncwlibrary/surf .
-docker push uncwlibrary/surf
+docker build --platform linux/amd64 -t uncwlibrary/surf:replacement_redirect .
+docker push uncwlibrary/surf:replacement_redirect
 ```
