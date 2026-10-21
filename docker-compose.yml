@@ -5,7 +5,7 @@ services:
     container_name: surf
     platform: linux/amd64
     volumes:
-      - ./app:/var/www/html/surf
+      - ./app:/usr/local/apache2/htdocs/surf
     labels:
       - traefik.enable=true
       - traefik.http.routers.surf.entrypoints=websecure
