@@ -1,5 +1,3 @@
-FROM amd64/php:5.6.40-apache
+FROM amd64/httpd:2.4
 
-WORKDIR /var/www/html/surf
-
-COPY --chown=www-data:www-data ./app .
+COPY ./app /usr/local/apache2/htdocs/surf
